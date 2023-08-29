@@ -43,8 +43,6 @@ const ListGroup = ({items,handleSelectItem , selectedIndex , heading }:Props) =>
       <ul className="list-group">
         {items.map((item, index) =>
           <li className={selectedIndex === index ? "list-group-item active " : "list-group-item"}
-          
-          
             key={index} onClick={() => {
             handleSelectItem(index)
             }}>
